@@ -24,8 +24,7 @@ Welcome to the this repository! This repo contains all the code examples I follo
 
    ```bash
    <!-- TODO: UPDATE TO MY  -->
-   git clone https://github.com/bhancockio/langchain-crash-course
-   cd langchain-crash-course
+   https://github.com/hassaan763/Langchain_Practices.git
    ```
 
 2. Install dependencies using Poetry:
