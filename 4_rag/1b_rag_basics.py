@@ -1,0 +1,37 @@
+import os
+from langchain_chroma import Chroma
+from langchain_together import TogetherEmbeddings
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Define the persistent directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+persistent_directory = os.path.join(current_dir, "db", "chroma_db")
+
+# Define the embedding model
+embedings=TogetherEmbeddings(
+    model="BAAI/bge-base-en-v1.5"
+)
+# Load the existing vector store with the embedding function
+db = Chroma(persist_directory=persistent_directory,
+            embedding_function=embedings)
+
+print(db.get()["documents"])  # should show a list of stored chunks
+ 
+# Define the user's question
+query = "Who is Odysseus' wife?"
+
+# Retrieve relevant documents based on the query
+retriever = db.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={"k": 3, "score_threshold": 0.4}  # Adjust k and score_threshold as needed,
+)
+relevant_docs = retriever.invoke(query)
+
+# Display the relevant results with metadata
+print("\n--- Relevant Documents ---")
+for i, doc in enumerate(relevant_docs, 1):
+    print(f"Document {i}:\n{doc.page_content}\n")
+    if doc.metadata:
+        print(f"Source: {doc.metadata.get('source', 'Unknown')}\n")
