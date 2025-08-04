@@ -1,8 +1,8 @@
-# LangChain Crash Course
+Introduction:
 
-Welcome to the LangChain Crash Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners video. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
+Welcome to the this repository! This repo contains all the code examples I followed. I now know how to use LangChain to create my own AI agents, build RAG chatbots, and automate tasks with AI.
 
-## Course Outline
+## Outline
 
 1. **Setup Environment**
 2. **Chat Models**
@@ -66,14 +66,14 @@ Here's a breakdown of the folders and what you'll find in each:
 - `4_chat_model_conversation_with_user.py`
 - `5_chat_model_save_message_history_firestore.py`
 
-Learn how to interact with models like ChatGPT, Claude, and Gemini.
+how to interact with models like ChatGPT, Claude, and Gemini.
 
 ### 2. Prompt Templates
 
 - `1_prompt_template_basic.py`
 - `2_prompt_template_with_chat_model.py`
 
-Understand the basics of prompt templates and how to use them effectively.
+Understanding the basics of prompt templates and how to use them effectively.
 
 ### 3. Chains
 
@@ -83,7 +83,7 @@ Understand the basics of prompt templates and how to use them effectively.
 - `4_chains_parallel.py`
 - `5_chains_branching.py`
 
-Learn how to create chains using Chat Models and Prompts to automate tasks.
+how to create chains using Chat Models and Prompts to automate tasks.
 
 ### 4. RAG (Retrieval-Augmented Generation)
 
@@ -99,7 +99,7 @@ Learn how to create chains using Chat Models and Prompts to automate tasks.
 - `8_rag_web_scrape_firecrawl.py`
 - `8_rag_web_scrape.py`
 
-Explore the technologies like documents, embeddings, and vector stores that enable RAG queries.
+Exploring the technologies like documents, embeddings, and vector stores that enable RAG queries.
 
 ### 5. Agents & Tools
 
@@ -112,19 +112,11 @@ Explore the technologies like documents, embeddings, and vector stores that enab
   - `2_tool_decorator.py`
   - `3_tool_base_tool.py`
 
-Learn about agents, how they work, and how to build custom tools to enhance their capabilities.
-
-## How to Use This Repository
-
-1. **Watch the Video:** Start by watching the LangChain Master Class for Beginners video on YouTube at 2X speed for a high-level overview.
-
-2. **Run the Code Examples:** Follow along with the code examples provided in this repository. Each section in the video corresponds to a folder in this repo.
-
-3. **Join the Community:** If you get stuck or want to connect with other AI developers, join the FREE Skool community [here](https://www.skool.com/ai-developer-accelerator/about).
+Learned about agents, how they work, and how to build custom tools to enhance their capabilities.
 
 ## Comprehensive Documentation
 
-Each script in this repository contains detailed comments explaining the purpose and functionality of the code. This will help you understand the flow and logic behind each example.
+Each script in this repository contains detailed comments explaining the purpose and functionality of the code. 
 
 ## FAQ
 
@@ -137,16 +129,5 @@ A: Follow the instructions in the "Getting Started" section above. Ensure you ha
 **Q: I am getting an error when running the examples. What should I do?**  
 A: Ensure all dependencies are installed correctly and your environment variables are set up properly. If the issue persists, seek help in the Skool community or open an issue on GitHub.
 
-**Q: Can I contribute to this repository?**  
-A: Yes! Contributions are welcome. Please open an issue or submit a pull request with your changes.
-
 **Q: Where can I find more information about LangChain?**  
 A: Check out the official LangChain documentation and join the Skool community for additional resources and support.
-
-## Support
-
-If you encounter any issues or have questions, feel free to open an issue on GitHub or ask for help in the Skool community.
-
-## License
-
-This project is licensed under the MIT License.
